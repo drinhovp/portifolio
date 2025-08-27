@@ -3,21 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Leandro Machado - Desenvolvedor</title>
     <link rel="icon" type="image/png" href="drinho.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+=======
+    <title>DEV Leandro Machado</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilo do menu */
+        nav {
+            background-color: #333;
+            padding: 15px 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;              /* Deixa na horizontal */
+            justify-content: center;    /* Centraliza no meio */
+            gap: 60px;                  /* Espaço entre os itens */
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff9900;
+        }
+
+        /* Estilo do conteúdo da página */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #sobre { background-color: #f4f4f4; }
+        #trabalhos { background-color: #e2e2e2; }
+        #contato { background-color: #d0d0d0; }
+        #instagram { background-color: #bebebe; }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            max-width: 400px;
+            margin: 8px auto;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #555;
+        }
+
+        form button {
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        form button:hover {
+            background: #ff9900;
+        }
+
+    </style>
+</head>
+<body>
+
+>>>>>>> f00e36474574d9be516290813bce5c46ff1fbdad
     <!-- Menu -->
     <nav>
         <ul>
             <li><a href="#sobre">Sobre</a></li>
+<<<<<<< HEAD
             <li><a href="#trabalhos">Trabalhos</a></li>
+=======
+            <li><a href="#trabalhos">Meus Trabalhos</a></li>
+>>>>>>> f00e36474574d9be516290813bce5c46ff1fbdad
             <li><a href="#contato">Contato</a></li>
             <li><a href="#instagram">Instagram</a></li>
         </ul>
     </nav>
 
+<<<<<<< HEAD
     <!-- Seção Sobre -->
     <section id="sobre">
         <div class="container">
@@ -110,5 +207,76 @@
     </footer>
 
     <script src="script.js"></script>
+=======
+    <!-- Seções -->
+    <section id="sobre">
+        <h1>Sobre</h1>
+        <p>Olá! Meu nome é <strong>Leandro Machado</strong>, sou do Rio de janeiro e sou estudante de programação e apaixonado por tecnologia e desenvolvimento web.  
+        Já tive contato com programação e atualmente estou construindo projetos próprios para evoluir minhas habilidades como desenvolvedor.  
+        Gosto de aprender coisas novas, criar soluções práticas e unir minhas experiências profissionais com o mundo digital.  
+        Meu objetivo é crescer na área de tecnologia, explorando desenvolvimento de sites, aplicativos e projetos voltados para inovação.</p>
+    </section>
+
+    <section id="trabalhos">
+        <h1>Meus Trabalhos</h1>
+        <p>Mostre seus trabalhos ou projetos.</p>
+    </section>
+
+    <section id="contato">
+        <h1>Contato</h1>
+        <form id="formContato">
+            <label>Nome</label>
+            <input type="text" id="nome" required>
+
+            <label>Email</label>
+            <input type="email" id="email" required>
+
+            <label>Telefone</label>
+            <input type="text" id="telefone">
+
+            <label>Comentário</label>
+            <textarea rows="5" id="comentario" required></textarea>
+            
+            <button type="submit">Enviar pelo WhatsApp</button>
+        </form>
+    </section>
+
+    <section id="instagram">
+        <h1>Instagram</h1>
+        <p>
+        <a href="https://www.instagram.com/drinhovp/" target="_blank" rel="noopener noreferrer">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" 
+         alt="Instagram" width="50" height="50" 
+         style="vertical-align: middle; border-radius: 10px;">
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <p> Desenvolvido por Leandro Machado</p>
+    </footer>
+
+    <script>
+        document.getElementById("formContato").addEventListener("submit", function(e){
+            e.preventDefault(); // Impede de recarregar a página
+
+            // Pega os valores
+            let nome = document.getElementById("nome").value;
+            let email = document.getElementById("email").value;
+            let telefone = document.getElementById("telefone").value;
+            let comentario = document.getElementById("comentario").value;
+
+            // Número do WhatsApp (substitua pelo seu número real com DDD, ex: 5511999999999)
+            let numero = "5521980814388"; 
+
+            // Mensagem formatada
+            let mensagem = `Olá, meu nome é ${nome}%0AEmail: ${email}%0ATelefone: ${telefone}%0AComentário: ${comentario}`;
+
+            // Abre o WhatsApp
+            window.open(`https://wa.me/${numero}?text=${mensagem}`, "_blank");
+        });
+    </script>
+
+>>>>>>> f00e36474574d9be516290813bce5c46ff1fbdad
 </body>
 </html>
